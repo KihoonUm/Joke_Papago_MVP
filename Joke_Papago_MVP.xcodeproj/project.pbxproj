@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00B04728016B6A5246DC210B /* Pods_Joke_Papago_MVP_Joke_Papago_MVPUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD20C332F9953B18B83640CC /* Pods_Joke_Papago_MVP_Joke_Papago_MVPUITests.framework */; };
+		247A1B7DAC2BC7734BF2482D /* Pods_Joke_Papago_MVPTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7059C886455E78192A04921 /* Pods_Joke_Papago_MVPTests.framework */; };
+		3D092B70C075DBAA28E8D04A /* Pods_Joke_Papago_MVP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B44B53DB3823CD2574DED97 /* Pods_Joke_Papago_MVP.framework */; };
 		C4CD136B27AB5BC0000E742B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CD136A27AB5BC0000E742B /* AppDelegate.swift */; };
 		C4CD136D27AB5BC0000E742B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CD136C27AB5BC0000E742B /* SceneDelegate.swift */; };
 		C4CD136F27AB5BC0000E742B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CD136E27AB5BC0000E742B /* ViewController.swift */; };
@@ -17,6 +20,12 @@
 		C4CD138527AB5BC5000E742B /* Joke_Papago_MVPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CD138427AB5BC5000E742B /* Joke_Papago_MVPTests.swift */; };
 		C4CD138F27AB5BC5000E742B /* Joke_Papago_MVPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CD138E27AB5BC5000E742B /* Joke_Papago_MVPUITests.swift */; };
 		C4CD139127AB5BC5000E742B /* Joke_Papago_MVPUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CD139027AB5BC5000E742B /* Joke_Papago_MVPUITestsLaunchTests.swift */; };
+		C4CD13A227AB5CEE000E742B /* JokeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CD13A127AB5CEE000E742B /* JokeView.swift */; };
+		C4CD13A427AB5CF9000E742B /* JokeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4CD13A327AB5CF9000E742B /* JokeView.xib */; };
+		C4CD13A827AB6F76000E742B /* Joke.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CD13A727AB6F76000E742B /* Joke.swift */; };
+		C4CD13AA27AB6FD8000E742B /* PaPagoTrans.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CD13A927AB6FD8000E742B /* PaPagoTrans.swift */; };
+		C4CD13AD27AB94A4000E742B /* JokeAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CD13AC27AB94A4000E742B /* JokeAPI.swift */; };
+		C4CD13AF27AB9939000E742B /* PaPagoAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CD13AE27AB9939000E742B /* PaPagoAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +46,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A1DCDA77B30D2F186C94D53 /* Pods-Joke_Papago_MVP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Joke_Papago_MVP.release.xcconfig"; path = "Target Support Files/Pods-Joke_Papago_MVP/Pods-Joke_Papago_MVP.release.xcconfig"; sourceTree = "<group>"; };
+		42CAED1AB7A4B9F92DCA5201 /* Pods-Joke_Papago_MVP-Joke_Papago_MVPUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Joke_Papago_MVP-Joke_Papago_MVPUITests.release.xcconfig"; path = "Target Support Files/Pods-Joke_Papago_MVP-Joke_Papago_MVPUITests/Pods-Joke_Papago_MVP-Joke_Papago_MVPUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6D37F4CAFCC1403F8EEB3F53 /* Pods-Joke_Papago_MVP-Joke_Papago_MVPUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Joke_Papago_MVP-Joke_Papago_MVPUITests.debug.xcconfig"; path = "Target Support Files/Pods-Joke_Papago_MVP-Joke_Papago_MVPUITests/Pods-Joke_Papago_MVP-Joke_Papago_MVPUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7DAD90B36A7BC88EAD4E79AC /* Pods-Joke_Papago_MVP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Joke_Papago_MVP.debug.xcconfig"; path = "Target Support Files/Pods-Joke_Papago_MVP/Pods-Joke_Papago_MVP.debug.xcconfig"; sourceTree = "<group>"; };
+		9B44B53DB3823CD2574DED97 /* Pods_Joke_Papago_MVP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Joke_Papago_MVP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4CD136727AB5BC0000E742B /* Joke_Papago_MVP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Joke_Papago_MVP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4CD136A27AB5BC0000E742B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4CD136C27AB5BC0000E742B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +65,16 @@
 		C4CD138A27AB5BC5000E742B /* Joke_Papago_MVPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Joke_Papago_MVPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4CD138E27AB5BC5000E742B /* Joke_Papago_MVPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Joke_Papago_MVPUITests.swift; sourceTree = "<group>"; };
 		C4CD139027AB5BC5000E742B /* Joke_Papago_MVPUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Joke_Papago_MVPUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C4CD13A127AB5CEE000E742B /* JokeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeView.swift; sourceTree = "<group>"; };
+		C4CD13A327AB5CF9000E742B /* JokeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JokeView.xib; sourceTree = "<group>"; };
+		C4CD13A727AB6F76000E742B /* Joke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Joke.swift; sourceTree = "<group>"; };
+		C4CD13A927AB6FD8000E742B /* PaPagoTrans.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaPagoTrans.swift; sourceTree = "<group>"; };
+		C4CD13AC27AB94A4000E742B /* JokeAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeAPI.swift; sourceTree = "<group>"; };
+		C4CD13AE27AB9939000E742B /* PaPagoAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaPagoAPI.swift; sourceTree = "<group>"; };
+		C7059C886455E78192A04921 /* Pods_Joke_Papago_MVPTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Joke_Papago_MVPTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CECC9A3EDA755A5791C92BF2 /* Pods-Joke_Papago_MVPTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Joke_Papago_MVPTests.debug.xcconfig"; path = "Target Support Files/Pods-Joke_Papago_MVPTests/Pods-Joke_Papago_MVPTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DD20C332F9953B18B83640CC /* Pods_Joke_Papago_MVP_Joke_Papago_MVPUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Joke_Papago_MVP_Joke_Papago_MVPUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD05ED571C7C8EE09587AD19 /* Pods-Joke_Papago_MVPTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Joke_Papago_MVPTests.release.xcconfig"; path = "Target Support Files/Pods-Joke_Papago_MVPTests/Pods-Joke_Papago_MVPTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D092B70C075DBAA28E8D04A /* Pods_Joke_Papago_MVP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				247A1B7DAC2BC7734BF2482D /* Pods_Joke_Papago_MVPTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +98,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00B04728016B6A5246DC210B /* Pods_Joke_Papago_MVP_Joke_Papago_MVPUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A2971AAB10FEB3386FF7B71 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9B44B53DB3823CD2574DED97 /* Pods_Joke_Papago_MVP.framework */,
+				DD20C332F9953B18B83640CC /* Pods_Joke_Papago_MVP_Joke_Papago_MVPUITests.framework */,
+				C7059C886455E78192A04921 /* Pods_Joke_Papago_MVPTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4EDC3AC0245B537473E49601 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7DAD90B36A7BC88EAD4E79AC /* Pods-Joke_Papago_MVP.debug.xcconfig */,
+				0A1DCDA77B30D2F186C94D53 /* Pods-Joke_Papago_MVP.release.xcconfig */,
+				6D37F4CAFCC1403F8EEB3F53 /* Pods-Joke_Papago_MVP-Joke_Papago_MVPUITests.debug.xcconfig */,
+				42CAED1AB7A4B9F92DCA5201 /* Pods-Joke_Papago_MVP-Joke_Papago_MVPUITests.release.xcconfig */,
+				CECC9A3EDA755A5791C92BF2 /* Pods-Joke_Papago_MVPTests.debug.xcconfig */,
+				FD05ED571C7C8EE09587AD19 /* Pods-Joke_Papago_MVPTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		C4CD135E27AB5BC0000E742B = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +135,8 @@
 				C4CD138327AB5BC5000E742B /* Joke_Papago_MVPTests */,
 				C4CD138D27AB5BC5000E742B /* Joke_Papago_MVPUITests */,
 				C4CD136827AB5BC0000E742B /* Products */,
+				4EDC3AC0245B537473E49601 /* Pods */,
+				2A2971AAB10FEB3386FF7B71 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,10 +153,12 @@
 		C4CD136927AB5BC0000E742B /* Joke_Papago_MVP */ = {
 			isa = PBXGroup;
 			children = (
+				C4CD13AB27AB9476000E742B /* API */,
+				C4CD139F27AB5CA3000E742B /* Presenters */,
+				C4CD139E27AB5C9D000E742B /* UI */,
+				C4CD139D27AB5C94000E742B /* Models */,
 				C4CD136A27AB5BC0000E742B /* AppDelegate.swift */,
 				C4CD136C27AB5BC0000E742B /* SceneDelegate.swift */,
-				C4CD136E27AB5BC0000E742B /* ViewController.swift */,
-				C4CD137027AB5BC0000E742B /* Main.storyboard */,
 				C4CD137627AB5BC5000E742B /* Assets.xcassets */,
 				C4CD137827AB5BC5000E742B /* LaunchScreen.storyboard */,
 				C4CD137B27AB5BC5000E742B /* Info.plist */,
@@ -130,6 +184,66 @@
 			path = Joke_Papago_MVPUITests;
 			sourceTree = "<group>";
 		};
+		C4CD139D27AB5C94000E742B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C4CD13A727AB6F76000E742B /* Joke.swift */,
+				C4CD13A927AB6FD8000E742B /* PaPagoTrans.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C4CD139E27AB5C9D000E742B /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				C4CD13A627AB6864000E742B /* Storyboard */,
+				C4CD13A527AB6857000E742B /* Controllers */,
+				C4CD13A027AB5CB4000E742B /* Views */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		C4CD139F27AB5CA3000E742B /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		C4CD13A027AB5CB4000E742B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C4CD13A127AB5CEE000E742B /* JokeView.swift */,
+				C4CD13A327AB5CF9000E742B /* JokeView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C4CD13A527AB6857000E742B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C4CD136E27AB5BC0000E742B /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C4CD13A627AB6864000E742B /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				C4CD137027AB5BC0000E742B /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		C4CD13AB27AB9476000E742B /* API */ = {
+			isa = PBXGroup;
+			children = (
+				C4CD13AC27AB94A4000E742B /* JokeAPI.swift */,
+				C4CD13AE27AB9939000E742B /* PaPagoAPI.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,9 +251,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C4CD139427AB5BC5000E742B /* Build configuration list for PBXNativeTarget "Joke_Papago_MVP" */;
 			buildPhases = (
+				287633A7EF08E10F21303315 /* [CP] Check Pods Manifest.lock */,
 				C4CD136327AB5BC0000E742B /* Sources */,
 				C4CD136427AB5BC0000E742B /* Frameworks */,
 				C4CD136527AB5BC0000E742B /* Resources */,
+				E6917853D09BDC53F01653DA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -154,6 +270,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C4CD139727AB5BC5000E742B /* Build configuration list for PBXNativeTarget "Joke_Papago_MVPTests" */;
 			buildPhases = (
+				EFA6A076F56ED722EB9C7C13 /* [CP] Check Pods Manifest.lock */,
 				C4CD137C27AB5BC5000E742B /* Sources */,
 				C4CD137D27AB5BC5000E742B /* Frameworks */,
 				C4CD137E27AB5BC5000E742B /* Resources */,
@@ -172,9 +289,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C4CD139A27AB5BC5000E742B /* Build configuration list for PBXNativeTarget "Joke_Papago_MVPUITests" */;
 			buildPhases = (
+				1E3DF58D50580637F5E848AB /* [CP] Check Pods Manifest.lock */,
 				C4CD138627AB5BC5000E742B /* Sources */,
 				C4CD138727AB5BC5000E742B /* Frameworks */,
 				C4CD138827AB5BC5000E742B /* Resources */,
+				77856EC7604A7F9563C36B75 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -235,6 +354,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4CD137A27AB5BC5000E742B /* LaunchScreen.storyboard in Resources */,
+				C4CD13A427AB5CF9000E742B /* JokeView.xib in Resources */,
 				C4CD137727AB5BC5000E742B /* Assets.xcassets in Resources */,
 				C4CD137227AB5BC0000E742B /* Main.storyboard in Resources */,
 			);
@@ -256,15 +376,123 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1E3DF58D50580637F5E848AB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Joke_Papago_MVP-Joke_Papago_MVPUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		287633A7EF08E10F21303315 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Joke_Papago_MVP-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		77856EC7604A7F9563C36B75 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Joke_Papago_MVP-Joke_Papago_MVPUITests/Pods-Joke_Papago_MVP-Joke_Papago_MVPUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Joke_Papago_MVP-Joke_Papago_MVPUITests/Pods-Joke_Papago_MVP-Joke_Papago_MVPUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Joke_Papago_MVP-Joke_Papago_MVPUITests/Pods-Joke_Papago_MVP-Joke_Papago_MVPUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E6917853D09BDC53F01653DA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Joke_Papago_MVP/Pods-Joke_Papago_MVP-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Joke_Papago_MVP/Pods-Joke_Papago_MVP-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Joke_Papago_MVP/Pods-Joke_Papago_MVP-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EFA6A076F56ED722EB9C7C13 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Joke_Papago_MVPTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C4CD136327AB5BC0000E742B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4CD13AA27AB6FD8000E742B /* PaPagoTrans.swift in Sources */,
+				C4CD13A227AB5CEE000E742B /* JokeView.swift in Sources */,
 				C4CD136F27AB5BC0000E742B /* ViewController.swift in Sources */,
+				C4CD13AD27AB94A4000E742B /* JokeAPI.swift in Sources */,
+				C4CD13A827AB6F76000E742B /* Joke.swift in Sources */,
 				C4CD136B27AB5BC0000E742B /* AppDelegate.swift in Sources */,
 				C4CD137527AB5BC0000E742B /* Joke_Papago_MVP.xcdatamodeld in Sources */,
 				C4CD136D27AB5BC0000E742B /* SceneDelegate.swift in Sources */,
+				C4CD13AF27AB9939000E742B /* PaPagoAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +666,7 @@
 		};
 		C4CD139527AB5BC5000E742B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DAD90B36A7BC88EAD4E79AC /* Pods-Joke_Papago_MVP.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -450,6 +679,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -465,6 +695,7 @@
 		};
 		C4CD139627AB5BC5000E742B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A1DCDA77B30D2F186C94D53 /* Pods-Joke_Papago_MVP.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -477,6 +708,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -492,6 +724,7 @@
 		};
 		C4CD139827AB5BC5000E742B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CECC9A3EDA755A5791C92BF2 /* Pods-Joke_Papago_MVPTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -511,6 +744,7 @@
 		};
 		C4CD139927AB5BC5000E742B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD05ED571C7C8EE09587AD19 /* Pods-Joke_Papago_MVPTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -530,6 +764,7 @@
 		};
 		C4CD139B27AB5BC5000E742B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D37F4CAFCC1403F8EEB3F53 /* Pods-Joke_Papago_MVP-Joke_Papago_MVPUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -547,6 +782,7 @@
 		};
 		C4CD139C27AB5BC5000E742B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42CAED1AB7A4B9F92DCA5201 /* Pods-Joke_Papago_MVP-Joke_Papago_MVPUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

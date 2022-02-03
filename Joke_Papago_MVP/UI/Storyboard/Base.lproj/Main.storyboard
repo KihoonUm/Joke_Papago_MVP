@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Joke_Papago_MVP" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PaPaGo 농담 번역기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="99U-NK-N3p">
+                                <rect key="frame" x="135.5" y="74" width="143" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dQB-HS-LSC" customClass="JokeView" customModule="Joke_Papago_MVP" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="110" width="414" height="350.5"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o2g-Hh-UFh" customClass="JokeView" customModule="Joke_Papago_MVP" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="460.5" width="414" height="350.5"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MoG-jX-ra3">
+                                <rect key="frame" x="163" y="811" width="88.5" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="새로운 유머"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="o2g-Hh-UFh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="M8G-ih-Tup"/>
+                            <constraint firstItem="o2g-Hh-UFh" firstAttribute="top" secondItem="dQB-HS-LSC" secondAttribute="bottom" id="OzE-MD-UZk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dQB-HS-LSC" secondAttribute="trailing" id="R4X-B6-X2y"/>
+                            <constraint firstItem="MoG-jX-ra3" firstAttribute="top" secondItem="o2g-Hh-UFh" secondAttribute="bottom" id="VXu-oy-Wbc"/>
+                            <constraint firstItem="MoG-jX-ra3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZWd-Zw-33s"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="MoG-jX-ra3" secondAttribute="bottom" constant="20" id="cVN-Kv-dDK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="o2g-Hh-UFh" secondAttribute="trailing" id="ewv-3G-NYX"/>
+                            <constraint firstItem="o2g-Hh-UFh" firstAttribute="height" secondItem="dQB-HS-LSC" secondAttribute="height" id="f2P-vp-lsd"/>
+                            <constraint firstItem="dQB-HS-LSC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="htm-xF-w8y"/>
+                            <constraint firstItem="99U-NK-N3p" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="mYD-hH-u7B"/>
+                            <constraint firstItem="dQB-HS-LSC" firstAttribute="top" secondItem="99U-NK-N3p" secondAttribute="bottom" constant="15" id="qBA-Ux-1sk"/>
+                            <constraint firstItem="99U-NK-N3p" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wlh-GV-wqp"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="englishTV" destination="dQB-HS-LSC" id="C6I-eF-cun"/>
+                        <outlet property="koreanTV" destination="o2g-Hh-UFh" id="df1-me-TCj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="35" y="94"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
