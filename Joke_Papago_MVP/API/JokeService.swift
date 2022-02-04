@@ -6,20 +6,26 @@
 //
 
 import Foundation
+import Moya
 
+// Data Provider 역할을 하게 되는 Service Class
 class JokeService {
     
-//    func getJoke(){
-//        let provider = MoyaProvider<JokeAPI>()
-//        provider.request(.randomJokes("Um", "Bard")) {(result) in
-//            switch result {
-//            case let .success(response):
-//                if let result = try? response.map(Joke.self){
-//                    self.joke = result
-//                }
-//            case .failure(_):
-//                print(Error.self)
-//            }
-//        }
-//    }
+    func getJoke(callback : @escaping (Joke?) -> Void) {
+        let provider = MoyaProvider<JokeAPI>()
+        provider.request(.randomJokes("Um", "Bard")) {(result) in
+            switch result {
+            case let .success(response):
+                if let result = try? response.map(Joke.self){
+                    callback(result)
+                  
+                }else{
+                    callback(nil)
+                }
+            case .failure(_):
+                print(Error.self)
+                callback(nil)
+            }
+        }
+    }
 }

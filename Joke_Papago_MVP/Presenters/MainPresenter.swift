@@ -8,27 +8,35 @@
 import Foundation
 import Moya
 
-//protocol JokeViewProvider : class {
-//    func setJokeView(krJoke : String, enJoke : String)
-//}
-//
-//protocol MainViewPresenter {
-//    init(view : JokeViewProvider, joke : Joke)
-//    func showView()
-//}
-//
-//class MainPresenter : MainViewPresenter {
-//    weak var view : JokeViewProvider?
-//    var joke : Joke
-//
-//    func showView() {
-//        print("")
-//    }
-//
-//    required init(view: JokeViewProvider, joke : Joke){
-//        self.view = view
-//        self.joke = joke
-//    }
-//
-//
-//}
+protocol JokeProviderView : class {
+    func setJokeView(enJoke : String)
+}
+
+class JokePresenter  {
+    let jokeGetService : JokeService
+    weak var view : JokeProviderView?
+
+    init(enJoke : JokeService) {
+        self.jokeGetService = enJoke
+    }
+
+    func setView(jokeProviderView : JokeProviderView?){
+        self.view = jokeProviderView
+    }
+    
+    func enJokeUpdate() {
+        jokeGetService.getJoke { [weak self] result in
+            if let result = result {
+                if let joke = result.value{
+                    self?.view?.setJokeView(enJoke: joke.joke ?? "nil")
+                    
+                }
+            }
+        }
+        print("showview")
+    }
+
+   
+
+
+}
