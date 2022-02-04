@@ -27,7 +27,7 @@
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="nym-PT-zFg">
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="nym-PT-zFg">
                             <rect key="frame" x="15" y="51" width="384" height="830"/>
                             <color key="backgroundColor" systemColor="systemGray5Color"/>
                             <color key="textColor" systemColor="labelColor"/>

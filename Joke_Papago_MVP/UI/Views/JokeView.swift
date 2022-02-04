@@ -7,6 +7,11 @@
 
 import UIKit
 
+protocol JokeViewDelegate{
+    func JokeViewRetry()
+    
+}
+
 class JokeView: UIView {
     
     @IBOutlet weak var textView: UITextView!

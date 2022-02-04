@@ -26,6 +26,8 @@
 		C4CD13AA27AB6FD8000E742B /* PaPagoTrans.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CD13A927AB6FD8000E742B /* PaPagoTrans.swift */; };
 		C4CD13AD27AB94A4000E742B /* JokeAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CD13AC27AB94A4000E742B /* JokeAPI.swift */; };
 		C4CD13AF27AB9939000E742B /* PaPagoAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CD13AE27AB9939000E742B /* PaPagoAPI.swift */; };
+		C4CD13B127ABAC22000E742B /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CD13B027ABAC22000E742B /* MainPresenter.swift */; };
+		C4CD13B327ABD6EE000E742B /* JokeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CD13B227ABD6EE000E742B /* JokeService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +73,8 @@
 		C4CD13A927AB6FD8000E742B /* PaPagoTrans.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaPagoTrans.swift; sourceTree = "<group>"; };
 		C4CD13AC27AB94A4000E742B /* JokeAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeAPI.swift; sourceTree = "<group>"; };
 		C4CD13AE27AB9939000E742B /* PaPagoAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaPagoAPI.swift; sourceTree = "<group>"; };
+		C4CD13B027ABAC22000E742B /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		C4CD13B227ABD6EE000E742B /* JokeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeService.swift; sourceTree = "<group>"; };
 		C7059C886455E78192A04921 /* Pods_Joke_Papago_MVPTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Joke_Papago_MVPTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CECC9A3EDA755A5791C92BF2 /* Pods-Joke_Papago_MVPTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Joke_Papago_MVPTests.debug.xcconfig"; path = "Target Support Files/Pods-Joke_Papago_MVPTests/Pods-Joke_Papago_MVPTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DD20C332F9953B18B83640CC /* Pods_Joke_Papago_MVP_Joke_Papago_MVPUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Joke_Papago_MVP_Joke_Papago_MVPUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -206,6 +210,7 @@
 		C4CD139F27AB5CA3000E742B /* Presenters */ = {
 			isa = PBXGroup;
 			children = (
+				C4CD13B027ABAC22000E742B /* MainPresenter.swift */,
 			);
 			path = Presenters;
 			sourceTree = "<group>";
@@ -240,6 +245,7 @@
 			children = (
 				C4CD13AC27AB94A4000E742B /* JokeAPI.swift */,
 				C4CD13AE27AB9939000E742B /* PaPagoAPI.swift */,
+				C4CD13B227ABD6EE000E742B /* JokeService.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -484,11 +490,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4CD13B327ABD6EE000E742B /* JokeService.swift in Sources */,
 				C4CD13AA27AB6FD8000E742B /* PaPagoTrans.swift in Sources */,
 				C4CD13A227AB5CEE000E742B /* JokeView.swift in Sources */,
 				C4CD136F27AB5BC0000E742B /* ViewController.swift in Sources */,
 				C4CD13AD27AB94A4000E742B /* JokeAPI.swift in Sources */,
 				C4CD13A827AB6F76000E742B /* Joke.swift in Sources */,
+				C4CD13B127ABAC22000E742B /* MainPresenter.swift in Sources */,
 				C4CD136B27AB5BC0000E742B /* AppDelegate.swift in Sources */,
 				C4CD137527AB5BC0000E742B /* Joke_Papago_MVP.xcdatamodeld in Sources */,
 				C4CD136D27AB5BC0000E742B /* SceneDelegate.swift in Sources */,
