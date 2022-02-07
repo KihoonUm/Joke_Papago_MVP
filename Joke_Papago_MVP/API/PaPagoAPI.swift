@@ -38,7 +38,7 @@ extension PaPagoAPI : TargetType{
     }
     
     var headers: [String : String]? {
-        let header = ["Content-Type:" : "application/x-www-form-urlencoded; charset=UTF-8" ,
+        let header = ["Content-Type" : "application/x-www-form-urlencoded; charset=UTF-8",
                       "X-Naver-Client-Id" : "PYZj3_hxJXUpvIi9GgVZ",
                       "X-Naver-Client-Secret" : "gXuhE5I70X"]
         return header

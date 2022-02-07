@@ -11,6 +11,7 @@ import Moya
 // Data Provider 역할을 하게 되는 Service Class
 class JokeService {
     
+    // 영문의 농담을 가져오는 함수
     func getJoke(callback : @escaping (Joke?) -> Void) {
         let provider = MoyaProvider<JokeAPI>()
         provider.request(.randomJokes("Um", "Bard")) {(result) in

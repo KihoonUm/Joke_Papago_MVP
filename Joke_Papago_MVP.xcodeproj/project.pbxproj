@@ -10,6 +10,7 @@
 		00B04728016B6A5246DC210B /* Pods_Joke_Papago_MVP_Joke_Papago_MVPUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD20C332F9953B18B83640CC /* Pods_Joke_Papago_MVP_Joke_Papago_MVPUITests.framework */; };
 		247A1B7DAC2BC7734BF2482D /* Pods_Joke_Papago_MVPTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7059C886455E78192A04921 /* Pods_Joke_Papago_MVPTests.framework */; };
 		3D092B70C075DBAA28E8D04A /* Pods_Joke_Papago_MVP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B44B53DB3823CD2574DED97 /* Pods_Joke_Papago_MVP.framework */; };
+		C4BDDE8D27B0A49200E68CF9 /* PaPagoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BDDE8C27B0A49200E68CF9 /* PaPagoService.swift */; };
 		C4CD136B27AB5BC0000E742B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CD136A27AB5BC0000E742B /* AppDelegate.swift */; };
 		C4CD136D27AB5BC0000E742B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CD136C27AB5BC0000E742B /* SceneDelegate.swift */; };
 		C4CD136F27AB5BC0000E742B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CD136E27AB5BC0000E742B /* ViewController.swift */; };
@@ -53,6 +54,7 @@
 		6D37F4CAFCC1403F8EEB3F53 /* Pods-Joke_Papago_MVP-Joke_Papago_MVPUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Joke_Papago_MVP-Joke_Papago_MVPUITests.debug.xcconfig"; path = "Target Support Files/Pods-Joke_Papago_MVP-Joke_Papago_MVPUITests/Pods-Joke_Papago_MVP-Joke_Papago_MVPUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		7DAD90B36A7BC88EAD4E79AC /* Pods-Joke_Papago_MVP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Joke_Papago_MVP.debug.xcconfig"; path = "Target Support Files/Pods-Joke_Papago_MVP/Pods-Joke_Papago_MVP.debug.xcconfig"; sourceTree = "<group>"; };
 		9B44B53DB3823CD2574DED97 /* Pods_Joke_Papago_MVP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Joke_Papago_MVP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4BDDE8C27B0A49200E68CF9 /* PaPagoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaPagoService.swift; sourceTree = "<group>"; };
 		C4CD136727AB5BC0000E742B /* Joke_Papago_MVP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Joke_Papago_MVP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4CD136A27AB5BC0000E742B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4CD136C27AB5BC0000E742B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -132,6 +134,15 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		C49B4C7B27AD16FC00B6728A /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				C4CD13B227ABD6EE000E742B /* JokeService.swift */,
+				C4BDDE8C27B0A49200E68CF9 /* PaPagoService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		C4CD135E27AB5BC0000E742B = {
 			isa = PBXGroup;
 			children = (
@@ -157,6 +168,7 @@
 		C4CD136927AB5BC0000E742B /* Joke_Papago_MVP */ = {
 			isa = PBXGroup;
 			children = (
+				C49B4C7B27AD16FC00B6728A /* Service */,
 				C4CD13AB27AB9476000E742B /* API */,
 				C4CD139F27AB5CA3000E742B /* Presenters */,
 				C4CD139E27AB5C9D000E742B /* UI */,
@@ -245,7 +257,6 @@
 			children = (
 				C4CD13AC27AB94A4000E742B /* JokeAPI.swift */,
 				C4CD13AE27AB9939000E742B /* PaPagoAPI.swift */,
-				C4CD13B227ABD6EE000E742B /* JokeService.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -492,6 +503,7 @@
 			files = (
 				C4CD13B327ABD6EE000E742B /* JokeService.swift in Sources */,
 				C4CD13AA27AB6FD8000E742B /* PaPagoTrans.swift in Sources */,
+				C4BDDE8D27B0A49200E68CF9 /* PaPagoService.swift in Sources */,
 				C4CD13A227AB5CEE000E742B /* JokeView.swift in Sources */,
 				C4CD136F27AB5BC0000E742B /* ViewController.swift in Sources */,
 				C4CD13AD27AB94A4000E742B /* JokeAPI.swift in Sources */,

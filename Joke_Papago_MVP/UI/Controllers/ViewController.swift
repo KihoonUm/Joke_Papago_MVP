@@ -8,13 +8,13 @@
 import UIKit
 
 class ViewController: UIViewController, JokeProviderView {
-   
 
     @IBOutlet weak var englishTV: JokeView!
     @IBOutlet weak var koreanTV: JokeView!
-    
+
     //presenter
-    var presenter = JokePresenter(enJoke: JokeService())
+    var jokePresenter = JokePresenter(enJoke: JokeService(), koJoke: PaPagoService())
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,16 +23,20 @@ class ViewController: UIViewController, JokeProviderView {
         englishTV.titleLB.text = "English"
         koreanTV.titleLB.text = "한국어"
        
-        presenter.setView(jokeProviderView: self)
+        jokePresenter.setView(jokeProviderView: self)
     }
     
     func setJokeView(enJoke: String) {
         self.englishTV.textView.text = enJoke
     }
     
+    func setPaPaGoView(krJOke: String) {
+        self.koreanTV.textView.text = krJOke
+    }
     
     @IBAction func retryButton(_ sender: UIButton) {
-        presenter.enJokeUpdate()
+        jokePresenter.enJokeUpdate()
+
     }
 }
 
